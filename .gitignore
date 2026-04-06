@@ -1,0 +1,8 @@
+node_modules/
+.env
+dist/
+build/
+server/data/ideas.json
+*.log
+.DS_Store
+g
