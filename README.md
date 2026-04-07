@@ -2,6 +2,7 @@
 
 > An AI-powered startup validation tool built for the Schmooze Media technical screening task. Submit a startup idea and receive a detailed expert analysis report powered by Claude AI.
 
+# Live Link - https://ai-startup-idea-validator-liard.vercel.app/
 ---
 
 ## Live Demo
