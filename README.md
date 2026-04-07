@@ -5,13 +5,6 @@
 # Live Link - https://ai-startup-idea-validator-liard.vercel.app/
 ---
 
-## Live Demo
-
-- **Frontend**: Deploy to Vercel (see below)
-- **Backend**: Deploy to Render (see below)
-
----
-
 ## Features
 
 - **AI Analysis** — Groq LLaMA 3.3 API generates structured reports including problem statement, customer persona, market overview, competitors, tech stack, risk factors, and a profitability score (0–100)
@@ -181,32 +174,6 @@ The prompt enforces realism over hype, requires exactly 3 competitors, 4–6 tec
 
 ---
 
-## Deployment
-
-### Frontend → Vercel
-
-```bash
-cd client
-npm run build
-# Push to GitHub and connect to Vercel
-# Set environment variable: REACT_APP_API_URL=https://your-server.onrender.com
-```
-
-### Backend → Render
-
-1. Push the `server/` folder to GitHub
-2. Create a new Web Service on Render
-3. Set environment variables:
-   - `GROQ_API_KEY` = your key
-   - `CLIENT_URL` = your Vercel frontend URL
-   - `PORT` = 5000
-4. Build command: `npm install`
-5. Start command: `npm start`
-
-> **Note**: For production, replace the JSON file store with MongoDB Atlas or Neon (Postgres). The `db/store.js` file has a clear interface making this straightforward.
-
----
-
 ## Architecture Notes
 
 - **Storage**: For MVP speed, the server uses a simple JSON file store (`server/data/ideas.json`). This is trivially replaceable with any database — the `store.js` module exposes `getAll`, `getById`, `insert`, and `delete` with a clean interface.
@@ -214,16 +181,3 @@ npm run build
 - **Error handling**: All API errors are caught and returned as structured JSON with `error` and `message` fields.
 - **CORS**: Configured to allow only the client origin via env variable.
 
----
-
-## Scoring Rubric Coverage
-
-| Category                  | Implementation                                    |
-|---------------------------|---------------------------------------------------|
-| AI Report Quality (25pts) | 10-field structured JSON, calibrated scoring       |
-| API Functionality (15pts) | POST, GET, GET/:id, DELETE all implemented         |
-| Frontend UI/UX (15pts)    | Dark themed, responsive, animated, 3 pages         |
-| Database Integration (10) | JSON persistence, easily swappable                 |
-| Deployment / Docs (10pts) | Vercel + Render instructions above                 |
-| Code Quality (15pts)      | Modular, separated concerns, env-based config      |
-| Documentation (10pts)     | This README                                        |
