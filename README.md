@@ -1,6 +1,6 @@
 # IdeaForge — AI Startup Idea Validator
 
-> An AI-powered startup validation tool built for the Schmooze Media technical screening task. Submit a startup idea and receive a detailed expert analysis report powered by Claude AI.
+> An AI-powered startup validation tool built for the Schmooze Media technical screening task. Submit a startup idea and receive a detailed expert analysis report powered by Groq AI.
 
 # Live Link - https://ai-startup-idea-validator-liard.vercel.app/
 ---
@@ -14,7 +14,7 @@
 
 ## Features
 
-- **AI Analysis** — Claude claude-sonnet-4-20250514 generates structured reports including problem statement, customer persona, market overview, competitors, tech stack, risk factors, and a profitability score (0–100)
+- **AI Analysis** — Groq LLaMA 3.3 API generates structured reports including problem statement, customer persona, market overview, competitors, tech stack, risk factors, and a profitability score (0–100)
 - **Dashboard** — Browse and manage all validated ideas
 - **Detail Reports** — Rich formatted view with visual score gauge and competitor breakdown
 - **Persistence** — JSON file-based storage (easy to swap for MongoDB/Postgres)
