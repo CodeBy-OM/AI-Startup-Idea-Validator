@@ -78,7 +78,7 @@ startup-validator/
 
 ### Prerequisites
 - Node.js v18+
-- An [Anthropic API key](https://console.anthropic.com/)
+- An [GROQ API key]
 
 ### 1. Clone and install
 
