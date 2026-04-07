@@ -43,7 +43,7 @@ export default function HomePage() {
       <div className="container">
         {/* Hero */}
         <header className="hero animate-fadeUp">
-          <div className="hero__badge">Powered by Claude AI</div>
+          <div className="hero__badge">Powered by IdeaForge AI</div>
           <h1 className="hero__title">
             Validate your startup idea<br />
             <span className="hero__title-accent">in seconds.</span>
