@@ -28,7 +28,7 @@
 |-----------|-------------------------------------|
 | Frontend  | React 18, React Router v6, Axios    |
 | Backend   | Node.js, Express 4                  |
-| AI        | Anthropic Claude (claude-sonnet-4-20250514) |
+| AI        | Groq LLaMA 3.3 API                  |
 | Storage   | JSON file (server/data/ideas.json)  |
 | Fonts     | Syne, DM Sans, DM Mono (Google Fonts)|
 
@@ -65,7 +65,7 @@ startup-validator/
     │   ├── routes/
     │   │   └── ideas.js      # CRUD routes
     │   ├── services/
-    │   │   └── ai.js         # Anthropic integration
+    │   │   └── ai.js         # Groq integration
     │   └── index.js          # Express app
     ├── data/                 # Auto-created, stores ideas.json
     ├── .env.example
@@ -92,7 +92,7 @@ cd startup-validator
 ```bash
 cd server
 cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+# Edit .env and add your GROQ_API_KEY
 npm install
 npm run dev
 # Server runs on http://localhost:5000
@@ -197,7 +197,7 @@ npm run build
 1. Push the `server/` folder to GitHub
 2. Create a new Web Service on Render
 3. Set environment variables:
-   - `ANTHROPIC_API_KEY` = your key
+   - `GROQ_API_KEY` = your key
    - `CLIENT_URL` = your Vercel frontend URL
    - `PORT` = 5000
 4. Build command: `npm install`
