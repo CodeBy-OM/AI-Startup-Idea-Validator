@@ -1,6 +1,6 @@
 # IdeaForge — AI Startup Idea Validator
 
-> An AI-powered startup validation tool built for the Schmooze Media technical screening task. Submit a startup idea and receive a detailed expert analysis report powered by Groq AI.
+> An AI-powered startup validation tool built for Submit a startup idea and receive a detailed expert analysis report powered by Groq AI.
 
 # Live Link - https://ai-startup-idea-validator-liard.vercel.app/
 ---
